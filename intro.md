@@ -12,7 +12,7 @@ console.log(document);
 **Output en la consola del navegador**
 
 <p align="center">
-    <img src="imagenes/grafico1.png" width="700">
+    <img src="imagenes/grafico1.png" width="800">
     </p>
 
 OJO: Evita la manipulación excesiva y constante del DOM. En su lugar, intenta agrupar tus cambios y hacerlos todos a la vez. Esto mejorará el rendimiento de tu código al reducir el coste computacional de la renderización constante del DOM.
