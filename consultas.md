@@ -42,3 +42,29 @@ OJO: Si solo deseas manipular un elemento específico, es importante usar el ín
 
 ## Propiedades
 
+**index.js**
+
+```js
+//Obtengo el último elemento que seleccione en el navegador
+const ultimoElemento = $0;
+console.log(ultimoElemento);
+
+//Obtengo la URL de mi página
+const URL = document.URL;
+console.log(URL);
+
+//Obtengo el body de mi página
+const body = document.body;
+console.log(body);
+
+//Obtengo la fuente de la primera imágen de mi página
+const imagen = document.images[0];
+console.log(imagen.src);
+```
+OJO: Nodos heredan propiedades de otros objetos del DOM: HTMLImageElement < HTMLElement < Element < Node < EventTarget < Object
+
+**Output en el navegador**
+
+<p align="center">
+    <img src="imagenes/grafico4.png" width="800">
+    </p>
