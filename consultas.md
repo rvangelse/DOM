@@ -68,3 +68,24 @@ OJO: Nodos heredan propiedades de otros objetos del DOM: HTMLImageElement < HTML
 <p align="center">
     <img src="imagenes/grafico4.png" width="800">
     </p>
+
+## Consultas usando selectores de CSS
+Puedes usar los selectores de CSS para obtener elementos de tu página.
+
+**index.js**
+```js
+//Obtengo la sección "proyectos" seleccionandola desde su id
+document.querySelector('#proyectos');
+
+//Obtengo el primer elemento que tenga la etiqueta "figure"
+document.querySelector('figure');
+
+//Obtengo todos los elementos con la etiqueta "figure" de la sección "proyectos" 
+document.querySelectorAll('#proyectos figure');
+```
+**Output en el navegador**
+
+<p align="center">
+    <img src="imagenes/grafico5.png" width="800">
+    </p>
+
