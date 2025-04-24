@@ -1,5 +1,5 @@
-# Create, Remove, Update, Delete (CRUD)
-Representa las cuatro operaciones fundamentales que se realizan a la hora de manipular información. 
+# Create, Read, Update, Delete (CRUD)
+CRUD representa las cuatro operaciones fundamentales que se realizan a la hora de manipular información: `crear`, `leer`, `editar` y `eliminar`.
 ## Crear
 Usando el DOM, puedes crear elementos en tu arhivo `.html` ,de forma `dinámica`. 
 
@@ -24,7 +24,7 @@ titulo.insertAdjacentHTML('afterend', span);
 ```
 OJO: También, puedes usarlo así: `div.insertAdjacentHTML('beforeend',"<p>Texto insertado</p>");`
 
-## Navegar por el DOM
+## Leer (Navegar por el DOM)
 
 ```js
 //Selecciono todas las imágenes de mi documento
@@ -58,7 +58,7 @@ h1.innerHTML = '<b>Nuevo título en negritas</b>';
 ```
 OJO: No manipules el DOM directamente para actualizar la interfaz de usuario. En su lugar, utiliza los métodos y propiedades integradas de tu biblioteca o framework que estes usando.
 
-## Remover
+## Eliminar
 
 ```js
 let h1 = document.querySelector('h1');
