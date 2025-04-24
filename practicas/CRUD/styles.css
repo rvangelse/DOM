@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(106, 119, 230);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+#lista {
+    text-align: center;
+
+    div{
+        background-color: rgb(231, 103, 103);
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgb(106, 119, 230);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
