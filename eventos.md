@@ -57,5 +57,42 @@ svg.addEventListener('click', () => {
     console.log('Clic en imagen: captura');
 }, true);
 ```
+OJO: Puedes detener la propagación del burbujeo, usando `stopPropagation()`
+
+Por ejemplo:
+```js
+    let documento = document;
+    let body = document.body;
+    let svg = document.querySelector('.imagen-svg');
+
+    documento.addEventListener('click', () => {
+    console.log('Clic en documento');
+    });
+
+    body.addEventListener('click', () => {
+        console.log('Clic en body');
+    });
+
+    svg.addEventListener('click', evento => {
+        console.log('Clic en imagen');
+        //Se detiene el burbujeo y solo se escucha el evento de imágen
+        evento.stopPropagation(); 
+    });
+```
 ## El objeto "evento"
 
+```js
+let svg = document.querySelector('.imagen-svg');
+
+//Puedes capturar el evento en el callback e imprimir sus atributos
+svg.addEventListener('click', evento => {
+    console.log(evento);
+    console.log(evento.clientX);
+    console.log(evento.clientY);
+    console.log(evento.pageX);
+    console.log(evento.pageY);
+    console.log(evento.pointerType);
+    console.log(evento.type);
+    console.log(evento.target);
+});
+```
