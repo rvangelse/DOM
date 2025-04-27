@@ -17,4 +17,4 @@ console.log(document);
 
 OJO: Evita la manipulación excesiva y constante del DOM. En su lugar, intenta agrupar tus cambios y hacerlos todos a la vez. Esto mejorará el rendimiento de tu código al reducir el coste computacional de la renderización constante del DOM.
 
-OJO: Asegurate de poner tu script justo antes de cerrar la etiqueta del cuerpo `body` o utilizando eventos que verifican que el DOM está completamente cargado antes de ejecutar tu script, como `DOMContentLoaded`.
+OJO: Asegurate de poner tu script justo antes de cerrar la etiqueta del cuerpo `body` o utilizando eventos que verifican que el DOM está completamente cargado antes de ejecutar tu script, como `DOMContentLoaded`. Hoy en día, existe otra solución, usar el atributo `defer` en la etiqueta `script`.
