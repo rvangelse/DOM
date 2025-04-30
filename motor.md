@@ -45,7 +45,7 @@ let despues = performance.now();
 console.log(despues - antes);
 ```
 ## La pila de llamadas
-JS es un lenguaje de un solo hilo. Es decir, todo se procesa en serie.
+JS es un lenguaje de un solo hilo, es decir, todo se procesa en serie.
 
 Si queremos usar procesamiento paralelo, debemos usar Web APIs.
 
@@ -82,4 +82,36 @@ imprimirCuadrado(4);
         [imprimirCuadrado]
         []
 */
+```
+## Web APIs y la cola de callbacks
+
+```js
+console.log('primero');
+
+setTimeout(function callback() {
+    console.log('segundo');
+}, 2000);
+
+console.log('tercero');
+
+/*  Call Stack:
+        []
+        [console.log('primero')]
+        [setTimeout]              Se envia el callback a las Web APIs
+        [console.log('tercero')]
+        []
+        [callback]
+        [callback, console.log('segundo')]
+        [callback]
+        []
+
+    Web APIs:
+        []
+        [callback] El callback se retiene por 2s, luego se envia al Callback Queue
+        []
+
+    Callback Queue: 
+        []
+        [callback] (Se espera que el call-stack este vacío para enviar el callback)
+        []                                                           */
 ```
