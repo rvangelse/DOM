@@ -115,3 +115,137 @@ console.log('tercero');
         [callback] (Se espera que el call-stack este vacío para enviar el callback)
         []                                                           */
 ```
+## Depuración
+
+```js
+function a() {
+    return a.b.c;
+}
+
+function b() {
+    a();
+}
+
+
+function c() {
+    b();
+}
+
+c();
+
+/* Uncaught TypeError: Cannot read properties of undefined (reading 'c')
+     at a (<anonymous>:2:16) //El problema está en la función 'a'
+     at b (<anonymous>:6:5)  //'a' fue llamada por 'b'
+     at c (<anonymous>:11:5) //'b' fue llamada por 'c'
+     at <anonymous>:14:1                                                  */
+```
+## Práctica 5: El motor de JS
+
+**Código:**
+
+**index.html**
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página con Manipulación del DOM y Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Página de autos</h1>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Galeria de imágenes</h2>
+            <img src="https://th.bing.com/th/id/R.9ce20df6c4c9a845a496f818abb5e14e?rik=IXzCZlzn3CUncg&riu=http%3a%2f%2fwww.hdcarwallpapers.com%2fwalls%2f2017_honda_civic_type_r_6-HD.jpg&ehk=ayJoz4zLAJDZJOAaK%2fjqVxfVlSzZYXfZZiO2bnWlBjk%3d&risl=1&pid=ImgRaw&r=0" alt="Imagen Principal">
+            <button>Cambiar Imágen</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Página con Manipulación del DOM y Eventos. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
+```
+**styles.css**
+```css
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+img{
+    height: 200px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+section {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+```
+**script.js**
+```js
+const imagenActual = document.querySelector('img');
+const btnCambiarImagen = document.querySelector('button');
+
+//Lista de imágenes que se pueden mostrar
+const imagenes = [
+    'https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/609/2017-honda-civic-sdn_100609665.jpg',
+    'https://s3.us-east-2.amazonaws.com/prod.mm.com/img/featurenews/GBMD4761-source.jpg',
+    'https://www.hdcarwallpapers.com/download/2017_honda_civic_type_r_5-2560x1440.jpg',
+];
+
+let indiceImagenActual = 0;
+
+//Función para cambiar la imagen al hacer clic en el botón
+btnCambiarImagen.addEventListener('click', function() {
+    indiceImagenActual = (indiceImagenActual + 1) % imagenes.length;
+    imagenActual.src = imagenes[indiceImagenActual];
+});
+```
+**Output:**
+<p align="center">
+    <img src="imagenes/grafico10.png" width="800">
+</p>
+
