@@ -14,12 +14,11 @@ Apuntes sobre manipulación del DOM
    - [Práctica 1: Consultas usando el DOM](consultas.md#práctica-1-consultas-usando-el-dom)
 
 3. [**CRUD**](crud.md)
-   - [Operadores](control.md#operadores)
-   - [Práctica 2: Operadores en JS](control.md#práctica-2-operadores-en-js)
-   - [Condicionales](control.md#condicionales)
-   - [Práctica 3: Condicionales en JS](control.md#práctica-3-condicionales-en-js)  
-   - [Bucles](control.md#bucles)
-   - [Práctica 4: Bucles en JS](control.md#práctica-4-bucles-en-js)
+   - [Crear](crud.md#crear)
+   - [Leer](crud.md#leer-navegar-por-el-dom)
+   - [Editar](crud.md#editar)
+   - [Eliminar](crud.md#eliminar) 
+   - [Práctica 2: CRUD](crud.md#práctica-2-crud)
 
 4. [**Funciones**](funciones.md)  
    - [Declaración de funciones](funciones.md#declaración-de-funciones)
