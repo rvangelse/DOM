@@ -1,25 +1,19 @@
 # DOM 
 
-Apuntes sobre el manejo del DOM
+Apuntes sobre manipulación del DOM
 
 ## Temario
 
-1. [**Introducción al manejo del DOM**](intro.md)  
-   - [Instalación de NodeJS](intro.md#instalación-de-nodejs) 
-   - [Hola, mundo!](intro.md#hola-mundo)
+1. [**Introducción**](intro.md)  
 
-2. [**Variables y tipos de datos**](datos.md)
-   - [Variables](datos.md#variables)
-   - [Strings y sus métodos](datos.md#texto)
-   - [Numbers](datos.md#número)
-   - [Arrays y sus métodos](datos.md#arrays-y-sus-métodos)
-   - [Expresiones regulares (Regex)](datos.md#expresiones-regulares-regex)
-   - [Objetos](datos.md#objetos)
-   - [Tipos de datos](datos.md#tipos-de-datos)
-   - [Valor vs Referencia](datos.md#valor-vs-referencia)
-   - [Práctica 1: Variables y tipos de datos en JS](datos.md#práctica-1-variables-y-tipos-de-datos-en-js)
+2. [**Consultas**](consultas.md)
+   - [Consultas por id](consultas.md#consultas-por-id)
+   - [Consultas por class](consultas.md#consultas-por-class)
+   - [Propiedades de objetos del DOM](consultas.md#propiedades)
+   - [Consultas usando selectores de CSS](consultas.md#consultas-usando-selectores-de-css)
+   - [Práctica 1: Consultas usando el DOM](consultas.md#práctica-1-consultas-usando-el-dom)
 
-3. [**Estructuras de Control y Lógica**](control.md)
+3. [**CRUD**](crud.md)
    - [Operadores](control.md#operadores)
    - [Práctica 2: Operadores en JS](control.md#práctica-2-operadores-en-js)
    - [Condicionales](control.md#condicionales)
