@@ -21,56 +21,32 @@ Apuntes sobre manipulación del DOM
    - [Práctica 2: CRUD](crud.md#práctica-2-crud)
 
 4. [**Modificaciones**](modificaciones.md)  
-   - []()
-   - []()
-   - [Retorno](funciones.md#retorno)
-   - [Métodos](funciones.md#métodos)
-   - [Ambito](funciones.md#ambito)
-   - [Callback](funciones.md#callback)
-   - [Funciones flecha](funciones.md#funciones-flecha-arrow)
-   - [Closures](funciones.md#closures)
-   - [Funciones puras e impuras](funciones.md#funciones-puras-e-impuras)
-   - [Práctica 5: Funciones en JS](funciones.md#práctica-5-funciones-en-js)
+   - [CSS](modificaciones.md#css)
+   - [Atributos](modificaciones.md#atributos)
+   - [Classes](modificaciones.md#classes)
+   - [Práctica 3: Modificaciones usando el DOM](modificaciones.md#práctica-3-modificaciones-usando-el-dom)
 
-5. [**Programación Orientada a Objetos**](objetos.md)  
-   - [Contexto](objetos.md#contexto)  
-   - [Getter y Setter](objetos.md#getter-y-setter)
-   - [Vinculación](objetos.md#vinculación)
-   - [Constructores](objetos.md#constructores)
-   - [Clases](objetos.md#clases)
-   - [Herencia](objetos.md#herencia)
-   - [Extender](objetos.md#extender})
-   - [Práctica 6: Objetos en JS](objetos.md#práctica-6-objetos-en-js)
-   - [Práctica 7: Red Social](objetos.md#práctica-7-red-social)
+5. [**Eventos**](eventos.md)  
+   - [Monitoreo de eventos](eventos.md#monitoreo-de-eventos)  
+   - [Escuchar eventos](eventos.md#escuchar-eventos)
+   - [Burbujeo](eventos.md#burbujeo)
+   - [El objeto "evento"](eventos.md#el-objeto-evento)
+   - [Prevenir el comportamiento predeterminado de un evento](eventos.md#prevenir-el-comportamiento-predeterminado-de-un-evento)
+   - [Dejar de escuchar eventos](eventos.md#dejar-de-escuchar-eventos)
+   - [Práctica 4: Eventos en el DOM](eventos.md#práctica-4-eventos-en-el-dom)
 
-6. [**Módulos**](modulos.md)
-   - [Exportar](modulos.md#exportar)
-   - [Importar](modulos.md#importar)
-   - [Práctica 8: Módulos](modulos.md#pŕactica-8-módulos-en-js)
+6. [**El motor de JavaScript**](motor.md)
+   - [Web APIs](motor.md#web-apis)
+   - [La pila de llamadas](motor.md#la-pila-de-llamadas)
+   - [Web APIs y la cola de callbacks](motor.md#web-apis-y-la-cola-de-callbacks)
+   - [Depuración](motor.md#depuración)
+   - [Práctica 5: El motor de JS](motor.md#práctica-5-el-motor-de-js)
 
-7. [**Asincronía en JavaScript**](asincronia.md)  
-   - [Temporizadores](asincronia.md#temporizadores) 
-   - [Promesas](asincronia.md#promesas) 
-   - [Funciones async](asincronia.md#funciones-async)
-   - [Manejo de errores](asincronia.md#manejo-de-errores)
-   - [Fetch Web API](asincronia.md#fetch-webapi)
-   - [HTTP](asincronia.md#http-hypertext-transfer-protocol)
-   - [Práctica 9: Asincronía en JS](asincronia.md#práctica-9-asincronía-en-js)
+7. [**Contenido Extra**](extra.md)  
+   - [npm](extra.md#npm) 
+   - [webpack](extra.md#webpack) 
 
-8. [**Patrones de diseño**](patrones.md)
-   - [Constructor](patrones.md#constructor)
-   - [Singleton](patrones.md#singleton)
-   - [Proxy](patrones.md#proxy)
-   - [Prototipo](patrones.md#prototipo)
-   - [Módulo](patrones.md#módulo)
-   - [Mezcla o Composición](patrones.md#mezcla-o-composición)
-   - [Mediador](patrones.md#mediador)
-   - [Práctica 10: Patrones de diseño en JS](patrones.md#práctica-10-patrones-de-diseño-en-js)
-
-9. [**Contenido Extra**](extra.md)
-   - [Reto: Rocola](extra.md#reto-rocola)
-
-10. [**Preguntas tipo Entrevista**](preguntas.md)
+8. [**Preguntas tipo Entrevista**](preguntas.md)
 
 ## Cómo usar este repositorio
 
@@ -78,7 +54,7 @@ Cada tema cuenta con ejemplos prácticos y explicaciones detalladas. Puedes clon
 
 ```sh
 # Clonar el repositorio
-git clone https://github.com/rvangelse/JS.git
+git clone https://github.com/rvangelse/DOM.git
 
 ```
 
