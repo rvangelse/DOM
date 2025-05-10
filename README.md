@@ -21,8 +21,8 @@ Apuntes sobre manipulación del DOM
    - [Práctica 2: CRUD](crud.md#práctica-2-crud)
 
 4. [**Modificaciones**](modificaciones.md)  
-   - [Declaración de funciones](funciones.md#declaración-de-funciones)
-   - [Expresión de una función](funciones.md#expresión-de-una-función)
+   - []()
+   - []()
    - [Retorno](funciones.md#retorno)
    - [Métodos](funciones.md#métodos)
    - [Ambito](funciones.md#ambito)
